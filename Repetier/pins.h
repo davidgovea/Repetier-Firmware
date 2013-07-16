@@ -624,6 +624,10 @@ STEPPER_CURRENT_CONTROL
 * Sanguinololu pin assignment
 *
 ****************************************************************************************/
+#if MOTHERBOARD == 65
+    #define MOTHERBOARD 62
+    #define AZTEEG_X1
+#endif
 #if MOTHERBOARD == 62
     #define MOTHERBOARD 6
     #define SANGUINOLOLU_V_1_2 
@@ -679,6 +683,16 @@ STEPPER_CURRENT_CONTROL
       #define E0_ENABLE_PIN       -1
 
     #endif
+
+    #ifdef AZTEEG_X1
+      #define X_MIN_PIN          -2
+      #define X_MAX_PIN          18
+
+      #define Y_MIN_PIN          -1
+      #define Y_MAX_PIN          19
+
+      #define Z_MIN_PIN          -1
+      #define Z_MAX_PIN          20
 
     #define TEMP_0_PIN          7   // MUST USE ANALOG INPUT NUMBERING NOT DIGITAL OUTPUT NUMBERING!!!!!!!!! (pin 33 extruder)
     #define TEMP_1_PIN          6   // MUST USE ANALOG INPUT NUMBERING NOT DIGITAL OUTPUT NUMBERING!!!!!!!!! (pin 34 bed)
