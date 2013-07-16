@@ -58,6 +58,7 @@ To override EEPROM settings with config settings, set EEPROM_MODE 0
 // Sanguinololu up to 1.1     = 6
 // Sanguinololu 1.2 and above = 62
 // Melzi board                = 63  // Define REPRAPPRO_HUXLEY if you have one for correct HEATER_1_PIN assignment!
+// Azteeg X1                  = 65
 // Gen7 1.1 till 1.3.x        = 7
 // Gen7 1.4.1 and later       = 71
 // Teensylu (at90usb)         = 8 // requires Teensyduino
@@ -69,7 +70,7 @@ To override EEPROM settings with config settings, set EEPROM_MODE 0
 // Rambo                      = 301
 // Arduino Due                = 401 // This is only experimental
 
-#define MOTHERBOARD 62
+#define MOTHERBOARD 65
 
 #include "pins.h"
 
