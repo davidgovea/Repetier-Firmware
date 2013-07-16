@@ -590,7 +590,7 @@ on this endstop.
 #define ENDSTOP_PULLUP_Y_MIN false
 #define ENDSTOP_PULLUP_Z_MIN false
 #define ENDSTOP_PULLUP_X_MAX true
-#define ENDSTOP_PULLUP_Y_MAX true
+#define ENDSTOP_PULLUP_Y_MAX false
 #define ENDSTOP_PULLUP_Z_MAX true
 
 //set to true to invert the logic of the endstops
@@ -631,7 +631,7 @@ on this endstop.
 // Inverting axis direction
 #define INVERT_X_DIR true
 #define INVERT_Y_DIR true
-#define INVERT_Z_DIR true
+#define INVERT_Z_DIR false
 
 //// ENDSTOP SETTINGS:
 // Sets direction of endstops when homing; 1=MAX, -1=MIN
